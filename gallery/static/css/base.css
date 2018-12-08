@@ -2,6 +2,12 @@
     border-radius: 2%;
 }
 
+#image{
+    width:600px;
+    height:500px;
+    margin-left: 280px;
+}
+
 .jumbotron {
     width: 100%;
 }
@@ -10,8 +16,8 @@
     background: url(../images/image1.jpeg);
     background-size: cover;
     height: 900px;
+    color: aliceblue;
 }
-
 #homepage {
     position: relative;
 }
