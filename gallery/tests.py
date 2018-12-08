@@ -109,13 +109,11 @@ class ImageTestClass(TestCase):
         self.image.delete_image()
 
     def test_update_method(self):
-        """
-        Function to test that an image's details can be updates
-        """
+    #    testing image upgates
         self.image.save_image()
-        new_image = Image.objects.filter(photo='test.jpg').update(photo='manka.jpg')
-        images = Image.objects.get(photo='manka.jpg')
-        self.assertTrue(images.photo, 'manka.jpg')
+        new_image = Image.objects.filter(photo='test.jpg').update(photo='banana.jpg')
+        images = Image.objects.get(photo='banana.jpg')
+        self.assertTrue(images.photo, 'banana.jpg')
 
     def test_get_image_by_id(self):
         """
