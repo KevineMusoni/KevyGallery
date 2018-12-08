@@ -5,7 +5,7 @@ from .models import Location, Category, Image
 
 class LocationTestClass(TestCase):
     """
-    Tests Location class and its functions
+    Testing location and its functions
     """
     #Set up method
     def setUp(self):
