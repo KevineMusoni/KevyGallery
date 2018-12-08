@@ -9,7 +9,7 @@ class LocationTestClass(TestCase):
 
     #Set up method
     def setUp(self):
-        self.locale = Location(id='1',location='uganda',)
+        self.locale = Location(id='1',location='rwanda',)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.locale, Location))
@@ -21,9 +21,7 @@ class LocationTestClass(TestCase):
         self.assertTrue(len(locations) > 0)
 
     def test_delete_method(self):
-        """
-        Function to test that a location can be deleted
-        """
+        # test for location delete function
         self.locale.save_location()
         locations = Location.objects.all()
         self.locale.delete_location()
@@ -34,16 +32,16 @@ class LocationTestClass(TestCase):
         Function to test that a location's details can be updates
         """
         self.locale.save_location()
-        new_place = Location.objects.filter(location='uganda').update(location='uganda')
-        locations = Location.objects.get(location='uganda')
-        self.assertTrue(locations.location, 'uganda')
+        new_place = Location.objects.filter(location='rwanda').update(location='rwanda')
+        locations = Location.objects.get(location='rwanda')
+        self.assertTrue(locations.location, 'rwanda')
 
 
 class CategoryTestClass(TestCase):
-    """
-    Tests category class and its functions
-    """
+# Test for category function
+
     #Set up method
+
     def setUp(self):
         self.cat = Category(id='1',category='nature')
     #Testing instance
@@ -82,7 +80,7 @@ class ImageTestClass(TestCase):
     #Set up method
     def setUp(self):
         #creating a new location and saving it
-        self.locale = Location(location='uganda')
+        self.locale = Location(location='rwanda')
         self.locale.save_location()
 
         #creating a new category and saving it
