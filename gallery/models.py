@@ -22,7 +22,7 @@ class Location(models.Model):
         location = cls(location=location)
         location.save()
 
-# adds image category
+# adding image category
 class Category(models.Model):
     category = models.CharField(max_length = 30)
 
