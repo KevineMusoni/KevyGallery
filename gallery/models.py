@@ -45,6 +45,7 @@ class Category(models.Model):
         category = cls(category=category)
         category.save()
 
+# adding image class
 class Image(models.Model):
     image_name = models.CharField(max_length = 60)
     description = models.TextField()
