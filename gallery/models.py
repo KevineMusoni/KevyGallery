@@ -81,7 +81,7 @@ class Image(models.Model):
     def all_images(cls):
         images = cls.objects.all()
         return images
-
+# search image 
     @classmethod
     def search_by_category(cls,search_term):
         images = cls.objects.filter(category__category=search_term)
