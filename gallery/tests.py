@@ -4,9 +4,9 @@ from .models import Location, Category, Image
 # Create your tests here.
 
 class LocationTestClass(TestCase):
-    """
-    Testing location and its functions
-    """
+
+    # Testing location and its functions
+
     #Set up method
     def setUp(self):
         self.locale = Location(id='1',location='uganda',)
@@ -15,9 +15,7 @@ class LocationTestClass(TestCase):
         self.assertTrue(isinstance(self.locale, Location))
 
     def test_save_method(self):
-        """
-        Function to test that location is being saved
-        """
+        # test for checking whether the location saves
         self.locale.save_location()
         locations = Location.objects.all()
         self.assertTrue(len(locations) > 0)
