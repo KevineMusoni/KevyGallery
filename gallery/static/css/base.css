@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 .container {
     border-radius: 2%;
 }
@@ -11,6 +12,10 @@
 .jumbotron {
     width: 100%;
 }
+.sub-title{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+}
 
 #display {
     background: url(../images/image1.jpeg);
@@ -21,3 +26,24 @@
 #homepage {
     position: relative;
 }
+#details{
+    opacity: 0.8;
+}
+.button{
+display: inline-block;/*avoids merging*/
+font-size: 1.8rem;
+text-decoration:none;
+text-transform: uppercase;
+border-width: 2px;
+border-style: solid;
+padding: .5em 1.75em;
+}
+.button-accent{
+color: white;
+border-color: white;
+}
+.button-accent:hover,
+.button-accent:focus{
+background:#D3D3D3;
+color: #232323;
+} 
