@@ -5,35 +5,29 @@
 
 <div class="container-fluid" id="display">
 
-    <div class="jumbotron flow-text white-text text-center black" id="display-text">
-        <h1>Gallery</h1>
+    <div id="homepage">
+        <h1>KevyGallery</h1>
         <br><br>
-        <h3>my photo collection for people to view and share with friends</h3>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="#gallery" class="btn btn-default btn waves-effect waves-light">View Photos <i class="material-icons right">insert_photo</i></a>
+        <h3>"Find different stunning pictures taken allover the world"</h3>
+
+   
+        <a href="#gallery" class="btn btn-default btn waves-effect waves-light">View Photos</a>
 
     </div>
 
 </div>
 
 
-<div class="container-fluid text-text black" id="gallery">
-
+<div class="container-fluid text-text white" id="gallery">
     <br>
     <br>
     <br>
-
     <!-- loop through photos  -->
     {% for image in images %}
     <!-- display articles -->
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
-        <div class="card cardizo black">
+        <div class="card cardizo white">
             <div class="card-image">
                 <a class="white-text" href="/image/{{image.id}}"><img src="{{image.photo.url}}"></a>
             </div>

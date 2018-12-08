@@ -1,8 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
-# image location class
 class Location(models.Model):
     location = models.CharField(max_length = 30)
 
