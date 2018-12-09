@@ -10,14 +10,15 @@ def gallery(request):
 
 def search_results(request):
 
-    if 'image' in request.GET and request.GET["image"]:
-        search_term = request.GET.get("image")
+    if 'article' in request.GET and request.GET["article"]:
+        search_term = request.GET.get("article")
         searched_images = Image.search_by_category(search_term)
         message = f"{search_term}"
         return render(request, 'search_image.html',{"message":message,"images": searched_images})
     else:
         message = "No photos under this category exist"
         return render(request, 'search_image.html',{"message":message})
+    return render(request,"search_image.html")    
 
 
 def image(request,image_id):
