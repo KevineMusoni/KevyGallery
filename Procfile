@@ -1,1 +1,1 @@
-web: gunicorn kevygallery.wsgi --log-file -
+web: gunicorn kgallery.wsgi --log-file -
